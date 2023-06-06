@@ -1,0 +1,16 @@
+server:
+  port: 9093
+spring:
+ datasource:
+    url: jdbc:postgresql://localhost:5432/Demo
+    username: postgres
+    password: Vasavi
+    
+ jpa:
+   hibernate:
+    ddl-auto: update
+   database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+   show-sql: true
+ sql:
+    init:
+      platform: postgres
